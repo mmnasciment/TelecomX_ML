@@ -12,7 +12,7 @@ O projeto foi estruturado nas seguintes etapas:
 - **Análise de Desbalanceamento:** Foi verificado que o conjunto de dados era desbalanceado, com **73.5%** de clientes ativos ("Não Churn") e **26.5%** de clientes que evadiram ("Churn").
 - **Balanceamento com SMOTE:** Para corrigir o desbalanceamento e evitar que os modelos fossem tendenciosos para a classe majoritária, foi aplicada a técnica SMOTE (*Synthetic Minority Over-sampling Technique*), criando um conjunto de dados de treino perfeitamente balanceado.
 - **Encoding de Variáveis:** As variáveis categóricas (como `gender`, `internet_service`, etc.) foram convertidas para um formato numérico através do método *One-Hot Encoding*.
-- **Divisão em Treino e Teste:** O conjunto de dados foi dividido em **70% para treinamento** e **30% para teste**, garantindo uma avaliação robusta e imparcial dos modelos.
+- **Divisão em Treino e Teste:** O conjunto de dados foi dividido em **80% para treinamento** e **20% para teste**, garantindo uma avaliação robusta e imparcial dos modelos.
 - **Padronização:** As variáveis numéricas contínuas (`tenure`, `monthly_charges`, `total_charges`) foram padronizadas (*StandardScaler*) para os modelos sensíveis à escala.
 
 #### b. Modelagem Preditiva
